@@ -31,7 +31,7 @@ function printResults(){
       totalSpaces++;
     }
   }
-  document.getElementById("resultOne").innerHTML = "There are " + totalWord +1 + " words in this text.";
+  document.getElementById("resultOne").innerHTML = "There are " + (parseInt(totalWord) + 1) + " words in this text.";
   document.getElementById("resultTwo").innerHTML = "There are " + totalSentence + " sentences in this text.";
   document.getElementById("resultThree").innerHTML = "There is an average of " + averageWords.toFixed(2) + " words per sentence.";
   document.getElementById("resultFour").innerHTML = "There are " + totalSpaces + " spaces in this text.";
